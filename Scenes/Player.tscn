@@ -1,7 +1,7 @@
 [gd_scene load_steps=44 format=2]
 
 [ext_resource path="res://PixelAdventurePack/Main Characters/Virtual Guy/Idle (32x32).png" type="Texture" id=1]
-[ext_resource path="res://Player.gd" type="Script" id=2]
+[ext_resource path="res://Scripts/Player.gd" type="Script" id=2]
 [ext_resource path="res://PixelAdventurePack/Main Characters/Virtual Guy/Run (32x32).png" type="Texture" id=3]
 [ext_resource path="res://PixelAdventurePack/Main Characters/Virtual Guy/Jump (32x32).png" type="Texture" id=4]
 [ext_resource path="res://PixelAdventurePack/Main Characters/Virtual Guy/Fall (32x32).png" type="Texture" id=5]
@@ -186,7 +186,8 @@ script = ExtResource( 2 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 16, 16 )
 frames = SubResource( 35 )
-animation = "WallJump"
+animation = "Idle"
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

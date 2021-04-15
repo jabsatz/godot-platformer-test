@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Platformer"
-run/main_scene="res://Level.tscn"
+run/main_scene="res://Scenes/Game.tscn"
 config/icon="res://icon.png"
 
 [display]
@@ -25,6 +25,12 @@ window/size/height=768
 window/size/resizable=false
 window/stretch/mode="viewport"
 window/stretch/aspect="keep"
+
+[layer_names]
+
+2d_physics/layer_1="player"
+2d_physics/layer_2="walls"
+2d_physics/layer_3="interactables"
 
 [rendering]
 

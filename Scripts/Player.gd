@@ -65,7 +65,6 @@ func _physics_process(delta):
 	get_input()
 	get_animation()
 
-	print(velocity.x)
 	if is_on_wall() and velocity.y > 0:
 		velocity.y += wall_climb_gravity * delta
 	else:

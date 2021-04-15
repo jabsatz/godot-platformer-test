@@ -1,0 +1,239 @@
+[gd_scene load_steps=38 format=2]
+
+[ext_resource path="res://Scripts/Level1.gd" type="Script" id=1]
+[ext_resource path="res://PixelAdventurePack/Terrain/Terrain (16x16).png" type="Texture" id=2]
+[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://PixelAdventurePack/Items/Checkpoints/End/End (Pressed) (64x64).png" type="Texture" id=4]
+[ext_resource path="res://PixelAdventurePack/Items/Checkpoints/Start/Start (Moving) (64x64).png" type="Texture" id=5]
+[ext_resource path="res://PixelAdventurePack/Items/Checkpoints/End/End (Idle).png" type="Texture" id=6]
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+points = PoolVector2Array( 32, 0, 32, 32, 0, 32, 0, 0 )
+
+[sub_resource type="TileSet" id=2]
+resource_local_to_scene = true
+0/name = "Terrain (16x16).png 0"
+0/texture = ExtResource( 2 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 208, 16, 32, 32 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 1 )
+0/shape_one_way = false
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
+
+[sub_resource type="AtlasTexture" id=3]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 0, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=4]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 64, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=5]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 128, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=6]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 192, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=7]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 256, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=8]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 320, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=9]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 384, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=10]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 448, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=11]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 512, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=12]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 576, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=13]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 640, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=14]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 704, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=15]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 768, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=16]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 832, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=17]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 896, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=18]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 960, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=19]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 1024, 0, 64, 64 )
+
+[sub_resource type="SpriteFrames" id=20]
+animations = [ {
+"frames": [ SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ) ],
+"loop": true,
+"name": "default",
+"speed": 30.0
+} ]
+
+[sub_resource type="AtlasTexture" id=21]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 0, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=22]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=23]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 64, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=24]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 128, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=25]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 192, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=26]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 256, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=27]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 320, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=28]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 384, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=29]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 448, 0, 64, 64 )
+
+[sub_resource type="SpriteFrames" id=30]
+animations = [ {
+"frames": [ SubResource( 21 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ), SubResource( 27 ), SubResource( 28 ), SubResource( 29 ) ],
+"loop": true,
+"name": "win",
+"speed": 30.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=31]
+extents = Vector2( 24, 25 )
+
+[node name="Level2" type="Node2D"]
+script = ExtResource( 1 )
+player_scene = ExtResource( 3 )
+
+[node name="Node2D" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="TileMap" type="TileMap" parent="Node2D"]
+tile_set = SubResource( 2 )
+cell_size = Vector2( 32, 32 )
+cell_custom_transform = Transform2D( 16, 0, 0, 16, 0, 0 )
+collision_layer = 2
+collision_mask = 3
+format = 1
+tile_data = PoolIntArray( 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 6, 0, 0, 7, 0, 0, 8, 0, 0, 9, 0, 0, 10, 0, 0, 11, 0, 0, 12, 0, 0, 13, 0, 0, 14, 0, 0, 15, 0, 0, 16, 0, 0, 17, 0, 0, 18, 0, 0, 19, 0, 0, 20, 0, 0, 21, 0, 0, 22, 0, 0, 23, 0, 0, 24, 0, 0, 25, 0, 0, 26, 0, 0, 27, 0, 0, 28, 0, 0, 29, 0, 0, 30, 0, 0, 31, 0, 0, 65536, 0, 0, 65544, 0, 0, 65552, 0, 0, 65560, 0, 0, 65567, 0, 0, 131072, 0, 0, 131080, 0, 0, 131088, 0, 0, 131096, 0, 0, 131103, 0, 0, 196608, 0, 0, 196616, 0, 0, 196624, 0, 0, 196632, 0, 0, 196639, 0, 0, 262144, 0, 0, 262148, 0, 0, 262152, 0, 0, 262156, 0, 0, 262160, 0, 0, 262164, 0, 0, 262168, 0, 0, 262171, 0, 0, 262172, 0, 0, 262175, 0, 0, 327680, 0, 0, 327684, 0, 0, 327688, 0, 0, 327692, 0, 0, 327696, 0, 0, 327700, 0, 0, 327704, 0, 0, 327711, 0, 0, 393216, 0, 0, 393220, 0, 0, 393224, 0, 0, 393228, 0, 0, 393232, 0, 0, 393236, 0, 0, 393240, 0, 0, 393247, 0, 0, 458752, 0, 0, 458756, 0, 0, 458760, 0, 0, 458764, 0, 0, 458768, 0, 0, 458772, 0, 0, 458776, 0, 0, 458783, 0, 0, 524288, 0, 0, 524292, 0, 0, 524296, 0, 0, 524300, 0, 0, 524304, 0, 0, 524308, 0, 0, 524312, 0, 0, 524319, 0, 0, 589824, 0, 0, 589828, 0, 0, 589832, 0, 0, 589836, 0, 0, 589840, 0, 0, 589844, 0, 0, 589848, 0, 0, 589855, 0, 0, 655360, 0, 0, 655364, 0, 0, 655368, 0, 0, 655372, 0, 0, 655376, 0, 0, 655380, 0, 0, 655384, 0, 0, 655391, 0, 0, 720896, 0, 0, 720900, 0, 0, 720904, 0, 0, 720908, 0, 0, 720912, 0, 0, 720916, 0, 0, 720920, 0, 0, 720927, 0, 0, 786432, 0, 0, 786436, 0, 0, 786440, 0, 0, 786444, 0, 0, 786448, 0, 0, 786452, 0, 0, 786456, 0, 0, 786463, 0, 0, 851968, 0, 0, 851972, 0, 0, 851976, 0, 0, 851980, 0, 0, 851984, 0, 0, 851988, 0, 0, 851992, 0, 0, 851999, 0, 0, 917504, 0, 0, 917508, 0, 0, 917512, 0, 0, 917516, 0, 0, 917520, 0, 0, 917524, 0, 0, 917528, 0, 0, 917535, 0, 0, 983040, 0, 0, 983044, 0, 0, 983048, 0, 0, 983052, 0, 0, 983056, 0, 0, 983060, 0, 0, 983064, 0, 0, 983071, 0, 0, 1048576, 0, 0, 1048580, 0, 0, 1048584, 0, 0, 1048588, 0, 0, 1048592, 0, 0, 1048596, 0, 0, 1048600, 0, 0, 1048607, 0, 0, 1114112, 0, 0, 1114116, 0, 0, 1114120, 0, 0, 1114124, 0, 0, 1114128, 0, 0, 1114132, 0, 0, 1114136, 0, 0, 1114143, 0, 0, 1179648, 0, 0, 1179652, 0, 0, 1179656, 0, 0, 1179660, 0, 0, 1179664, 0, 0, 1179668, 0, 0, 1179672, 0, 0, 1179679, 0, 0, 1245184, 0, 0, 1245188, 0, 0, 1245192, 0, 0, 1245196, 0, 0, 1245200, 0, 0, 1245204, 0, 0, 1245208, 0, 0, 1245215, 0, 0, 1310720, 0, 0, 1310724, 0, 0, 1310732, 0, 0, 1310740, 0, 0, 1310751, 0, 0, 1376256, 0, 0, 1376260, 0, 0, 1376268, 0, 0, 1376276, 0, 0, 1376287, 0, 0, 1441792, 0, 0, 1441796, 0, 0, 1441804, 0, 0, 1441812, 0, 0, 1441823, 0, 0, 1507328, 0, 0, 1507329, 0, 0, 1507330, 0, 0, 1507331, 0, 0, 1507332, 0, 0, 1507333, 0, 0, 1507334, 0, 0, 1507335, 0, 0, 1507336, 0, 0, 1507337, 0, 0, 1507338, 0, 0, 1507339, 0, 0, 1507340, 0, 0, 1507341, 0, 0, 1507342, 0, 0, 1507343, 0, 0, 1507344, 0, 0, 1507345, 0, 0, 1507346, 0, 0, 1507347, 0, 0, 1507348, 0, 0, 1507349, 0, 0, 1507350, 0, 0, 1507351, 0, 0, 1507352, 0, 0, 1507353, 0, 0, 1507354, 0, 0, 1507355, 0, 0, 1507356, 0, 0, 1507357, 0, 0, 1507358, 0, 0, 1507359, 0, 0 )
+
+[node name="Start" type="Node2D" parent="."]
+position = Vector2( 32, 672 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Start"]
+frames = SubResource( 20 )
+frame = 8
+playing = true
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="End" type="Area2D" parent="."]
+position = Vector2( 864, 64 )
+collision_layer = 0
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="End"]
+frames = SubResource( 30 )
+playing = true
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="End"]
+position = Vector2( 31.5, 40 )
+shape = SubResource( 31 )
+__meta__ = {
+"_edit_lock_": true
+}
+[connection signal="body_entered" from="End" to="." method="_on_End_body_entered"]
